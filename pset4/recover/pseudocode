@@ -1,0 +1,6 @@
+BYTE bytes = malloc(512) //to create this array thing
+int n = 0; //for how many blocks of 512 we have
+while (fread(bytes, sizeof(BYTE), 512, f) > 0)
+    {
+        n++;
+    }
